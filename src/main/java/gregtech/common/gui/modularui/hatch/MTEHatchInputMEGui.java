@@ -256,7 +256,7 @@ public class MTEHatchInputMEGui extends MTEHatchBaseGui<MTEHatchInputME> {
                         tooltip.addLine(
                             IKey.lang(
                                 "modularui2.fluid.phantom.amount",
-                                this.formatFluidTooltipAmount(fluid.amount),
+                                this.formatFluidTooltipAmount(getFluidAmountLong()),
                                 this.getBaseUnit()));
                         addAdditionalFluidInfo(tooltip, fluid);
 

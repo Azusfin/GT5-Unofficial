@@ -1242,9 +1242,9 @@ public class GTUtility {
         Fluid tFluid = FluidRegistry.getFluid(
             ItemList.Display_Fluid.getItem()
                 .getDamage(aDisplayStack));
-        return new FluidStack(
+        return new FluidStackLong(
             tFluid,
-            (int) aDisplayStack.getTagCompound()
+            aDisplayStack.getTagCompound()
                 .getLong("mFluidDisplayAmount"));
     }
 
